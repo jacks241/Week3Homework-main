@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    void Update()
+    void Awake()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {

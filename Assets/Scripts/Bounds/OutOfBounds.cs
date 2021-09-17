@@ -7,9 +7,10 @@ public class OutOfBounds : MonoBehaviour
         //TODO: Implement functionality to reset the game somehow.
         // Resetting the game includes destroying the out of bounds ball and creating a new one ready to be launched from the paddle
 
-        if (GetComponent<Collider>().CompareTag("Ball"))
+        if (GetComponent<Collider2D>().CompareTag("Ball"))
         {
-            Destroy(GetComponent<Collider>().gameObject);
+            Destroy(GetComponent<Collider2D>().gameObject);
         }
+
     }
 }
