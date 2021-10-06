@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public const int PIECE_COUNT_PER_ROW = 13;
     public const float PIECE_LENGTH = 0.96f;
     public const int TOTAL_ROWS = 10;
+    int i = 0;
+    int g = 0;
 
     [SerializeField]
     private Transform pieces = null;
@@ -30,6 +32,14 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(ballPrefab);
+        }
+
+        for(i = 0; i < TOTAL_ROWS; i++)
+        {
+            for(g = 0; g < PIECE_COUNT_PER_ROW; g++)
+            {
+                Instantiate(piecePrefab);
+            }
         }
     }
 

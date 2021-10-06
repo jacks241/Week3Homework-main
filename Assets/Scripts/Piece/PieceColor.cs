@@ -28,7 +28,7 @@ public class PieceColor : MonoBehaviour
     private void ChooseColor()
     {
         //TODO
-        spriteRenderer.sprite = Random()
+        //spriteRenderer.sprite = Random()
         
         //spriteRenderer.sprite = ???;
     }
